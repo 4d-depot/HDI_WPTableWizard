@@ -1,0 +1,117 @@
+{
+    "tableDataSource": "ds.People.all().orderBy(\"continent asc,country asc, city asc\")",
+    "columns": [
+        {
+            "check": true,
+            "header": "Firstname",
+            "source": "This.item.firstname"
+        },
+        {
+            "check": true,
+            "header": "Lastname",
+            "source": "This.item.lastname"
+        },
+        {
+            "check": true,
+            "header": "Company",
+            "source": "This.item.toCompany.name"
+        },
+        {
+            "check": false,
+            "header": "City",
+            "source": "This.item.city"
+        },
+        {
+            "check": false,
+            "header": "Country",
+            "source": "This.item.country"
+        },
+        {
+            "check": false,
+            "header": "Continent",
+            "source": "This.item.continent"
+        },
+        {
+            "check": true,
+            "header": "Salary",
+            "source": "String(This.item.salary;\"###,###.00\")"
+        }
+    ],
+    "breaks": [
+        {
+            "label": "Continent",
+            "source": "This.item.continent"
+        },
+        {
+            "label": "Country",
+            "source": "This.item.country"
+        },
+        {
+            "label": "City",
+            "source": "This.item.city"
+        }
+    ],
+    "breakFormulas": [
+        
+        {
+            "label": "City",
+            "source": "This.item.city"
+        },
+        {
+            "label": "Country",
+            "source": "This.item.country"
+        },
+        {
+            "label": "Continent",
+            "source": "This.item.continent"
+        },
+        {
+            "label": "Average of salaries ",
+            "source": "String(This.breakItems.average(\"salary\"); \"###,###.00\")"
+        },
+        {
+            "label": "Sum of salaries",
+            "source": "String(This.breakItems.sum(\"salary\"); \"###,###.00\")"
+        },
+        {
+            "label": "Minimum salary",
+            "source": "String(This.breakItems.min(\"salary\"); \"###,###.00\")"
+        },
+        {
+            "label": "Maximum salary",
+            "source": "String(This.breakItems.max(\"salary\"); \"###,###.00\")"
+        }
+    ],
+    "bcorFormulas": [
+        {
+            "label": "Sum of salaries",
+            "source": "String(This.tableData.sum(\"salary\"); \"###,###.00\")"
+        }
+    ],
+    "extraFormulas": [
+        {
+            "label": "Average of salaries",
+            "source": "String(This.tableData.average(\"salary\"); \"###,###.00\")"
+        },
+        {
+            "label": "Sum of salaries",
+            "source": "String(This.tableData.sum(\"salary\"); \"###,###.00\")"
+        },
+        {
+            "label": "Minimum salary",
+            "source": "String(This.tableData.min(\"salary\"); \"###,###.00\")"
+        },
+        {
+            "label": "Maximum salary",
+            "source": "String(This.tableData.max(\"salary\"); \"###,###.00\")"
+        },
+        {
+            "label": "Current date short",
+            "source": "String(Current date; 1)"
+        },
+        {
+            "label": "Current date long",
+            "source": "String(Current date; 3)"
+        }
+    ]
+}

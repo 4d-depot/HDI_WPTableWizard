@@ -1,0 +1,115 @@
+{
+	"tables": [
+		{
+			"original": "Company",
+			"translation": "Company"
+		},
+		{
+			"original": "People",
+			"translation": "People"
+		}
+	],
+	"fields": [
+		{
+			"original": "name",
+			"translation": "Name"
+		},
+		{
+			"original": "address",
+			"translation": "Address"
+		},
+		{
+			"original": "city",
+			"translation": "City"
+		},
+		{
+			"original": "phone",
+			"translation": "Phone"
+		},
+		{
+			"original": "zipCode",
+			"translation": "Zip code"
+		},
+		{
+			"original": "lastname",
+			"translation": "Lastname"
+		},
+		{
+			"original": "firstname",
+			"translation": "Firstname"
+		},
+		{
+			"original": "title",
+			"translation": "Title"
+		},
+		{
+			"original": "salary",
+			"translation": "Salary"
+		},
+		{
+			"original": "country",
+			"translation": "Country"
+		},
+		{
+			"original": "continent",
+			"translation": "Continent"
+		},
+        {
+            "original": "company",
+            "translation": "Company"
+        }
+	],
+	"formulas": [
+		{
+			"original": "City",
+			"translation": "City"
+		},
+		{
+			"original": "Country",
+			"translation": "Country"
+		},
+		{
+			"original": "Continent",
+			"translation": "Continent"
+		},
+		{
+			"original": "Average of salaries",
+			"translation": "Average of salaries"
+		},
+		{
+			"original": "Sum of salaries",
+			"translation": "Sum of salaries"
+		},
+		{
+			"original": "Minimum salary",
+			"translation": "Minimum salary"
+		},
+		{
+			"original": "Maximum salary",
+			"translation": "Maximum salary"
+		},
+		{
+			"original": "Current date short",
+			"translation": "Current date short"
+		},
+		{
+			"original": "Current date long",
+			"translation": "Current date long"
+		}
+	],
+	"fileNames":[
+		{
+			"original": "peopleByCompany",
+			"translation": "People grouped by company"
+		},
+		{
+			"original": "peopleByLocalisation",
+			"translation": "People grouped by location"
+		},
+        {
+            "original": "myTheme",
+            "translation": "My Theme"
+        }
+	]
+
+}

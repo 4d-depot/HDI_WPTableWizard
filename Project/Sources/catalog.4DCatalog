@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_WPTableWizard" uuid="2D4F6103DC084198BFC0283C03D0A0B2" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="INFO" uuid="107A367EBCC346259FD971E8FC1097DA" id="1">
+		<field name="ID" uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B" type="4" unique="true" autosequence="true" not_null="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="Description" uuid="C9EFE648E9234AADA33FB25D61C0190B" type="10" never_null="true" id="2">
+			<field_extra position="4"/>
+		</field>
+		<field name="TabTitle" uuid="58AF214936C941439CB263026A5B46ED" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra position="3"/>
+		</field>
+		<field name="PageNumber" uuid="A2D86BBFD5134D06999CBDD14FD07A27" type="4" never_null="true" id="4">
+			<field_extra position="2"/>
+		</field>
+		<primary_key field_name="ID" field_uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="0" top="0" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="People" uuid="4A5B5ABA21AE40AC80B87B588C0F86F8" id="2">
+		<field name="ID" uuid="FD7C811F9D61453D93F05DFB77AEF3A4" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="lastname" uuid="80004E0040BB424083783127895FE2FB" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="city" uuid="4F88F92D84CA462CAC66DEFBB57426A2" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="phone" uuid="F020D39593AC41AF9748E528A6B80D9B" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="firstname" uuid="D3893D15A8134397BE61E3E8A41269F9" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="address" uuid="16A3552284E24214936F27E272833040" type="10" never_null="true" id="6"/>
+		<field name="zipCode" uuid="C1121FFF2F244F7D9851A46392B93D5F" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="companyID" uuid="EE12CFD05E2B45C4B87B4F5AE29FF795" type="4" never_null="true" id="8"/>
+		<field name="title" uuid="B76EBCEDDC9C4D4E8562F21CBCF85E2C" type="10" limiting_length="255" never_null="true" id="9"/>
+		<field name="salary" uuid="B13327BFD7014802BFB9935906D80DDB" type="6" never_null="true" id="10"/>
+		<field name="country" uuid="5D6C17BEC69E49CC9268FD26FE70A13B" type="10" limiting_length="255" never_null="true" id="11"/>
+		<field name="continent" uuid="3B7F38545CC846BD8AD32D40C13B14DF" type="10" limiting_length="255" never_null="true" id="12"/>
+		<primary_key field_name="ID" field_uuid="FD7C811F9D61453D93F05DFB77AEF3A4"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="15">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="222.203125" top="11.26953125" width="190.50390625" height="366.1171875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Company" uuid="41120E12D1EA498DBC464CDCF52C9311" id="3">
+		<field name="ID" uuid="1AE0BD27CB9142D2A6DFCC71CE2764ED" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="C6D13F80B5D04C038740576517E4A158" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="address" uuid="2993BDFD07104503A90B5A37C9256825" type="10" never_null="true" id="3"/>
+		<field name="city" uuid="B0E5E685BDDA480781EEA4CC15D827BA" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="phone" uuid="DB0C53FFA44A4B40A0A448B137C5EDF4" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="zipCode" uuid="062FF4ED291C4EB4BE0C6DBAC5F7B5E5" type="10" limiting_length="255" never_null="true" id="6"/>
+		<primary_key field_name="ID" field_uuid="1AE0BD27CB9142D2A6DFCC71CE2764ED"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="10">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="525.6875" top="39.734375" width="149.66015625" height="254.9765625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="FF922400821545F4AEB1F30491FDE246" name_Nto1="toCompany" name_1toN="toPeople" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="EE12CFD05E2B45C4B87B4F5AE29FF795" name="companyID">
+				<table_ref uuid="4A5B5ABA21AE40AC80B87B588C0F86F8" name="People"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="1AE0BD27CB9142D2A6DFCC71CE2764ED" name="ID">
+				<table_ref uuid="41120E12D1EA498DBC464CDCF52C9311" name="Company"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="39A482C402B64887B239EB3A82A9AD18" type="7">
+		<field_ref uuid="1AE0BD27CB9142D2A6DFCC71CE2764ED" name="ID">
+			<table_ref uuid="41120E12D1EA498DBC464CDCF52C9311" name="Company"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A4E1368096EB461D830AB6D6E2F24F11" type="7">
+		<field_ref uuid="FD7C811F9D61453D93F05DFB77AEF3A4" name="ID">
+			<table_ref uuid="4A5B5ABA21AE40AC80B87B588C0F86F8" name="People"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B17E3BF54450493DB72FBD48A5745784" type="7">
+		<field_ref uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B" name="ID">
+			<table_ref uuid="107A367EBCC346259FD971E8FC1097DA" name="INFO"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:72.1.0" __keywordBuildingHash="icu:72.1.0" package_name="HDI_Template_v18" structure_file_name="HowDoI" data_file_path=":HowDoI.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

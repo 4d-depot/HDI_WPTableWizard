@@ -1,0 +1,114 @@
+{
+	"tables": [
+		{
+			"original": "Company",
+			"translation": "Société"
+		},
+		{
+			"original": "People",
+			"translation": "Personnes"
+		}
+	],
+	"fields": [
+		{
+			"original": "name",
+			"translation": "Nom"
+		},
+		{
+			"original": "address",
+			"translation": "Adresse"
+		},
+		{
+			"original": "city",
+			"translation": "Ville"
+		},
+		{
+			"original": "phone",
+			"translation": "Téléphone"
+		},
+		{
+			"original": "zipCode",
+			"translation": "Code postal"
+		},
+		{
+			"original": "lastname",
+			"translation": "Nom"
+		},
+		{
+			"original": "firstname",
+			"translation": "Prénom"
+		},
+		{
+			"original": "title",
+			"translation": "Titre"
+		},
+		{
+			"original": "salary",
+			"translation": "Salaire"
+		},
+		{
+			"original": "country",
+			"translation": "Pays"
+		},
+		{
+			"original": "continent",
+			"translation": "Continent"
+		},
+		{
+			"original": "company",
+			"translation": "Société"
+		}
+	],
+	"formulas": [
+		{
+			"original": "City",
+			"translation": "Ville"
+		},
+		{
+			"original": "Country",
+			"translation": "Pays"
+		},
+		{
+			"original": "Continent",
+			"translation": "Continent"
+		},
+		{
+			"original": "Average of salaries ",
+			"translation": "Moyenne des salaires"
+		},
+		{
+			"original": "Sum of salaries",
+			"translation": "Somme des salaires"
+		},
+		{
+			"original": "Minimum salary",
+			"translation": "Salaire minimum"
+		},
+		{
+			"original": "Maximum salary",
+			"translation": "Salaire maximum"
+		},
+		{
+			"original": "Current date short",
+			"translation": "Date format court"
+		},
+		{
+			"original": "Current date long",
+			"translation": "Date format long"
+		}
+	],
+	"fileNames":[
+		{
+			"original": "peopleByCompany",
+			"translation": "Personnes groupées par société"
+		},
+		{
+			"original": "peopleByLocalisation",
+			"translation": "Personnes groupées par région"
+		},
+        {
+            "original": "myTheme",
+            "translation": "Mon Thème"
+        }
+	]
+}

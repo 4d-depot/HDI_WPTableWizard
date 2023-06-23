@@ -1,0 +1,1 @@
+OPEN URL:C673(File:C1566("/RESOURCES/4DWP_Wizard/Translations/en.json").platformPath)
